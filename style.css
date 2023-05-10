@@ -13,7 +13,7 @@ body {
 
 header {
   background-color: #3c3a39;
-  color: #ffffff;
+  color: #fff;
   padding: 1rem;
   height: 10vh;
 }
@@ -49,6 +49,14 @@ header {
   height: 110vh;
 }
 
+footer ul {
+  width: 50%;
+  margin: 2rem auto 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .intro h3,
 .about-me h3 {
   font-family: 'Roboto', sans-serif;
@@ -58,7 +66,7 @@ header {
 }
 
 .about-me h3 {
-  color: #ffffff;
+  color: #fff;
 }
 
 .intro h1,
@@ -168,13 +176,19 @@ li {
   font-family: 'Roboto', sans-serif;
   font-size: large;
   background-color: #ff6b00;
-  color: #ffffff;
+  color: #fff;
   padding: 0.7rem 1rem;
   text-decoration: none;
 }
 
 .div {
   margin-top: 2rem;
+}
+
+.tools li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+  font-size: larger;
 }
 
 #projects {
@@ -184,7 +198,8 @@ li {
 
 .project {
   height: 60vh;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0),
@@ -198,7 +213,7 @@ li {
 }
 
 .project h2 {
-  color: #ffffff;
+  color: #fff;
   font-family: 'Crete Round', sans-serif;
   font-weight: lighter;
   font-size: 2rem;
@@ -207,13 +222,15 @@ li {
 
 .project ul li {
   font-family: 'Poppins', sans-serif;
-  color: #ffffff;
+  color: #fff;
   font-size: large;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .project p {
   font-family: 'Poppins', sans-serif;
-  color: #ffffff;
+  color: #fff;
 }
 
 .project ul {
@@ -224,18 +241,13 @@ li {
   margin-top: 1rem;
 }
 
-.project ul li {
-  padding: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
 #full-btn {
   width: 100%;
   letter-spacing: 0.8px;
   font-family: 'Roboto', sans-serif;
   font-size: large;
   background-color: #ff6b00;
-  color: #ffffff;
+  color: #fff;
   padding: 1rem 0;
   text-decoration: none;
   display: flex;
@@ -280,7 +292,7 @@ hr {
 
 .sub-section {
   height: 55vh;
-  color: #ffffff;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -299,12 +311,6 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-.tools li {
-  font-family: 'Poppins', sans-serif;
-  font-weight: lighter;
-  font-size: larger;
 }
 
 .section-four {
@@ -360,13 +366,6 @@ footer {
   justify-content: center;
   align-items: center;
   border-top: 1px solid #dbd8d7;
-}
-footer ul {
-  width: 50%;
-  margin: 2rem auto 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 svg path {
