@@ -198,10 +198,9 @@ li {
 
 .project {
   height: 60vh;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0)
     ),
     url('img/img-blur.png');
@@ -412,6 +411,10 @@ svg path {
     list-style: none;
   }
 
+  .avatar img {
+    width: 52%;
+  }
+
   .intro {
     padding: 0;
     display: flex;
@@ -443,6 +446,18 @@ svg path {
     position: relative;
     width: 50vw;
     height: 109vh;
+  }
+
+  .multi-post h3 {
+    margin: 0;
+    padding: 0;
+    color: #172b4d;
+    font-size: 3rem;
+  }
+
+  .multi-post p {
+    color: #172b4d;
+    font-size: 1.5rem;
   }
 
   .intro-text div h1 {
@@ -484,24 +499,8 @@ svg path {
     justify-content: space-between;
   }
 
-  .avatar img {
-    width: 52%;
-  }
-
   .multi-post {
     width: 43%;
-  }
-
-  .multi-post h3 {
-    margin: 0;
-    padding: 0;
-    color: #172b4d;
-    font-size: 3rem;
-  }
-
-  .multi-post p {
-    color: #172b4d;
-    font-size: 1.5rem;
   }
 
   .skills {
@@ -538,12 +537,9 @@ svg path {
 
   .project {
     height: 60vh;
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0)
-      ),
-      url('img/img.png');
+    background-image:
+      url('img/img.png'),
+      linear-gradient(rgba(255, 255, 255, 0));
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
