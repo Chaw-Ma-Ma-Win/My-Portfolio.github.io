@@ -12,54 +12,71 @@
     <header>
       <nav class="nav">
         <h3>My Logo</h3>
-        <img src="img/menu-icon.png" alt="menu button" class="menu-btn" />
+        <img src="img/menu-icon.png" alt="menu button" class="menu-btn none" />
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#"><img src="img/menu-down.png" alt="image" /></a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <section class="intro">
-      <div>
-        <h1>Hey There.</h1>
-        <h1>I'm Chaw.</h1>
-        <h3>I'm a Software Developer</h3>
-        <p>
-          I can help you build a product , feature or website. Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don't hesitate to contact me.
-        </p>
-        <ul>
-          <li>
-            <a href="#">
-              <img src="img/github.svg" alt="github icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/Linkedin icon.svg" alt="linkedIn icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/angel list.svg" alt="angel list icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/twitter.svg" alt="twitter icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/medium.svg" alt="medium icon" />
-            </a>
-          </li>
-        </ul>
+      <div class="intro-text">
         <div>
-          <img
-            src="img/Group.png"
-            alt="banner image"
-            class="illustration-one"
-          />
+          <h1>Hey There.</h1>
+          <h1>I'm Chaw.</h1>
+          <h3>I'm a Software Developer</h3>
+          <p>
+            I can help you build a product , feature or website. Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don't hesitate to contact me.
+          </p>
         </div>
+        <div>
+          <ul class="intro-icons">
+            <li>
+              <a href="#">
+                <img src="img/github.svg" alt="github icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/Linkedin icon.svg" alt="linkedIn icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/angel list.svg" alt="angel list icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/twitter.svg" alt="twitter icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/medium.svg" alt="medium icon" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="intro-img">
+        <img
+          src="img/Group.png"
+          alt="illustration"
+          class="illustration-one none"
+        />
+        <img
+          src="img/Illustration-header.png"
+          alt="Illustration-header"
+          class="desktop-illu"
+        />
       </div>
     </section>
 
@@ -67,17 +84,19 @@
     <section class="section-two">
       <div class="works">
         <h2>My Recent Works</h2>
+        <hr />
       </div>
 
-      <div>
-        <img src="img/Avatar.png" alt="Avatar PNG" />
+      <div class="avatar">
+        <img src="img/Avatar.png" alt="Avatar png" />
 
         <div class="multi-post">
           <h3>Multi-Post Stories</h3>
           <p>
             A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
+            sign-ups required. This has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a standard dummy
+            text.
           </p>
           <ul class="skills">
             <li>CSS</li>
@@ -92,100 +111,112 @@
       </div>
 
       <div id="projects">
-        <div class="project">
-          <h2>Professional Art Printing Data</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <div>
-          <a href="#" id="full-btn">See Project</a>
-        </div>
-
-        <div class="project">
-          <h2>Professional Art Printing Data</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <div>
-          <a href="#">See Project</a>
+        <div class="see-project">
+          <div class="project none">
+            <h2>Professional Art Printing Data</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. Has been the industry's standard.
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>Bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+          <div>
+            <a href="#" id="full-btn">See Project</a>
+          </div>
         </div>
 
-        <div class="project">
-          <h2>Professional Art Printing Data</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
         <div>
-          <a href="#">See Project</a>
+          <div class="project">
+            <h2>Professional Art Printing Data</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. Has been the industry's standard.
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>Bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+          <div class="none">
+            <a href="#">See Project</a>
+          </div>
         </div>
 
-        <div class="project">
-          <h2>Professional Art Printing Data</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
         <div>
-          <a href="#">See Project</a>
+          <div class="project">
+            <h2>Professional Art Printing Data</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. Has been the industry's standard.
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>Bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+          <div class="none">
+            <a href="#">See Project</a>
+          </div>
         </div>
 
-        <div class="project">
-          <h2>Professional Art Printing Data</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
         <div>
-          <a href="#">See Project</a>
+          <div class="project">
+            <h2>Professional Art Printing Data</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. Has been the industry's standard.
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>Bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+          <div class="none">
+            <a href="#">See Project</a>
+          </div>
         </div>
 
-        <div class="project">
-          <h2>Professional Art Printing Data</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
         <div>
-          <a href="#">See Project</a>
+          <div class="project">
+            <h2>Professional Art Printing Data</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. Has been the industry's standard.
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>Bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+          <div class="none">
+            <a href="#">See Project</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="project">
+            <h2>Professional Art Printing Data</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. Has been the industry's standard.
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>Bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+          <div class="none">
+            <a href="#">See Project</a>
+          </div>
         </div>
       </div>
     </section>
