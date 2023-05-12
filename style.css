@@ -183,7 +183,6 @@ li {
 .tools li {
   font-family: 'Poppins', sans-serif;
   font-weight: lighter;
-  font-size: larger;
 }
 
 #projects {
@@ -295,7 +294,7 @@ hr {
 
 .sub-section h3 {
   font-family: 'Roboto', sans-serif;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .tools {
@@ -367,7 +366,11 @@ svg path {
 
 /* Mobile version finish */
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+  body {
+    width: 100%;
+  }
+
   * {
     padding: 0;
     margin: 0;
@@ -425,7 +428,7 @@ svg path {
   }
 
   .intro-text {
-    width: 60vw;
+    width: 60%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -479,20 +482,12 @@ svg path {
     color: #1c1a19;
     text-align: start;
     line-height: 1.5;
-    font-size: 2.5rem;
-  }
-
-  .about-me-text p {
-    font-size: larger;
+    font-size: 1.8rem;
   }
 
   .proj p {
     font-family: 'Poppins', sans-serif;
     color: #fff;
-  }
-
-  .intro-text div h1 {
-    font-size: 5rem;
   }
 
   .intro-text div h3 {
@@ -502,7 +497,7 @@ svg path {
   .intro-text div p {
     width: 90%;
     margin-top: 1rem;
-    font-size: 1.15rem;
+    font-size: small;
   }
 
   /* intro part finish */
@@ -517,14 +512,13 @@ svg path {
   }
 
   .works hr {
-    width: 60%;
+    width: 55%;
     height: 2px;
     margin-top: 3rem;
     background-color: #1c1a19;
   }
 
   .avatar {
-    width: 85%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -545,11 +539,11 @@ svg path {
   }
 
   #projects {
-    margin: 2rem auto 6rem auto;
-    width: 85%;
+    margin: 2rem 0;
+    width: 90%;
     display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-columns: 35% 35% 35%;
     grid-template-rows: 1fr 1fr;
   }
 
@@ -568,7 +562,7 @@ svg path {
 
   .section-cover {
     position: relative;
-    padding: 0 7rem;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -595,7 +589,7 @@ svg path {
   }
 
   .about-me div h1 {
-    margin-top: 7.5rem;
+    margin-top: 2rem;
   }
 
   .section-four {
@@ -609,7 +603,7 @@ svg path {
 
   .section-five {
     height: auto;
-    padding: 7rem;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -630,7 +624,7 @@ svg path {
   }
 
   #btn {
-    width: 10vw;
+    width: 30%;
     letter-spacing: 0.8px;
     font-family: 'Roboto', sans-serif;
     font-size: smaller;
@@ -720,5 +714,88 @@ svg path {
 
   .name input {
     width: 47%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .intro-text div h1 {
+    font-size: 5rem;
+  }
+
+  .about-me-text p {
+    font-size: larger;
+  }
+
+  .intro-text div p {
+    width: 90%;
+    margin-top: 1rem;
+    font-size: 1.15rem;
+  }
+
+  #projects {
+    margin: 2rem auto 6rem auto;
+    width: 85%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .avatar {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-me div h1 {
+    margin-top: 7.5rem;
+  }
+
+  .section-cover {
+    position: relative;
+    padding: 0 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub-section h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
+  }
+
+  .tools li {
+    font-size: larger;
+  }
+
+  .section-five {
+    height: auto;
+    padding: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .section-five h3 {
+    width: 38%;
+    color: #1c1a19;
+    text-align: start;
+    line-height: 1.5;
+    font-size: 2.5rem;
+  }
+
+  #btn {
+    width: 20%;
+    letter-spacing: 0.8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: smaller;
+    background-color: #ff6b00;
+    color: #fff;
+    padding: 0.7rem 0.6rem;
+    text-decoration: none;
+    margin: 1rem 0;
   }
 }
