@@ -6,11 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-}
-
 header {
   background-color: #3c3a39;
   color: #fff;
@@ -383,8 +378,15 @@ svg path {
   }
 
   header {
+    display: flex;
+    align-items: center;
     position: relative;
     z-index: 1;
+  }
+
+  footer ul {
+    width: 15%;
+    margin: 2.6rem auto;
   }
 
   .nav {
@@ -402,7 +404,7 @@ svg path {
   .nav ul li a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    font-size: x-large;
+    font-size: larger;
     color: #fff;
     margin: 0.5rem 0 0.5rem;
   }
@@ -430,6 +432,13 @@ svg path {
     align-items: center;
   }
 
+  .about-me div img {
+    position: absolute;
+    width: 40%;
+    right: 0;
+    top: 10%;
+  }
+
   .intro-icons {
     display: flex;
     flex-direction: column;
@@ -437,9 +446,14 @@ svg path {
   }
 
   .intro-icons li a img {
-    width: 1.6rem;
+    width: 1.3rem;
     margin-top: 1rem;
     height: auto;
+  }
+
+  .intro ul {
+    width: 6rem;
+    margin: 0;
   }
 
   .desktop-illu {
@@ -452,12 +466,29 @@ svg path {
     margin: 0;
     padding: 0;
     color: #172b4d;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .multi-post p {
     color: #172b4d;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .section-five h3 {
+    width: 38%;
+    color: #1c1a19;
+    text-align: start;
+    line-height: 1.5;
+    font-size: 2.5rem;
+  }
+
+  .about-me-text p {
+    font-size: larger;
+  }
+
+  .proj p {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
   }
 
   .intro-text div h1 {
@@ -504,20 +535,20 @@ svg path {
   }
 
   .skills {
-    width: 67%;
+    width: 70%;
   }
 
   .skills li {
     font-family: 'Poppins', sans-serif;
-    padding: 0.6rem 0.9rem;
-    border: 1.5px solid #3c3a39;
+    padding: 0.4rem 0.7rem;
+    border: 1px solid #8993a4;
   }
 
   #projects {
-    margin: 1rem auto;
+    margin: 2rem auto 6rem auto;
     width: 85%;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -535,14 +566,159 @@ svg path {
     bottom: 0;
   }
 
+  .section-cover {
+    position: relative;
+    padding: 0 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-three {
+    height: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-me {
+    height: 80vh;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-me-text {
+    width: 55%;
+  }
+
+  .about-me div h1 {
+    margin-top: 7.5rem;
+  }
+
+  .section-four {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .section-four hr {
+    margin: 0 0 5rem 0;
+  }
+
+  .section-five {
+    height: auto;
+    padding: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .section-five form {
+    width: 55%;
+  }
+
+  .sub-section {
+    display: inline;
+    margin: 0;
+  }
+
+  .tools {
+    align-items: start;
+  }
+
+  #btn {
+    width: 10vw;
+    letter-spacing: 0.8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: smaller;
+    background-color: #ff6b00;
+    color: #fff;
+    padding: 0.7rem 0.6rem;
+    text-decoration: none;
+    margin: 1rem 0;
+  }
+
+  .proj-1 {
+    background-image:
+      linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      url('img/img.png');
+  }
+
+  .proj-2 {
+    background-image:
+      linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      url('img/website-blur.png');
+  }
+
   .project {
     height: 60vh;
-    background-image:
-      url('img/img.png'),
-      linear-gradient(rgba(255, 255, 255, 0));
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 0.8rem;
+    background-image:
+      linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      url('img/img-blur.png');
+  }
+
+  .proj {
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0.8rem;
+  }
+
+  .proj h2 {
+    color: #fff;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    margin: 6.7rem 0 1rem 0;
+  }
+
+  .project h2 {
+    margin: 6.7rem 0 1rem 0;
+  }
+
+  .proj-2 h2 {
+    margin: 9.4rem 0 1rem 0;
+  }
+
+  .proj ul li {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: large;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .proj ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .name {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name input {
+    width: 47%;
   }
 }
