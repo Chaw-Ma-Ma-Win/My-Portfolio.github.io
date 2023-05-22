@@ -192,8 +192,7 @@ li {
 
 .project {
   height: 60vh;
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0)
     ),
@@ -439,6 +438,7 @@ svg path {
     margin: 0 1.3rem;
     padding: 0.5rem 1rem 1rem 1rem;
     border-bottom: 1px solid #6f6c6b;
+    transition: 1s;
   }
 }
 
@@ -721,8 +721,7 @@ svg path {
   }
 
   .proj-1 {
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 0)
       ),
@@ -730,8 +729,7 @@ svg path {
   }
 
   .proj-2 {
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 0)
       ),
@@ -744,8 +742,7 @@ svg path {
     background-repeat: no-repeat;
     background-position: center;
     padding: 0.8rem;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 0)
       ),
