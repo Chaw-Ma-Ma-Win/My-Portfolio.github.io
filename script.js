@@ -1,20 +1,26 @@
-const crossBtn = document.querySelector('.mobile-cross');
-const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
-menuBtn.addEventListener('click', () => {
-  menu.style.display = 'inline-block';
-});
-
-function click() {
+const menuButton = document.querySelector('.menu-btn');
+const closeButton = document.querySelector('.mobile-cross');
+const body = document.querySelector('body');
+const list = document.querySelector('.cl');
+function showMenu() {
+  menu.style.display = 'inline';
+}
+function closeMenu() {
   menu.style.display = 'none';
 }
+menuButton.addEventListener('click', () => {
+  showMenu();
+});
 
-if (menu.style.display === 'inline-block') {
-  crossBtn.addEventListener('click', () => {
-    menu.style.display = 'none';
-  });
-} else {
-  document.addEventListener('click', () => {
-    setTimeout(click, 1500);
-  });
-}
+closeButton.addEventListener('click', () => {
+  closeMenu();
+});
+
+list.addEventListener('mousedown', () => {
+  setTimeout(closeMenu, 1000);
+});
+
+body.addEventListener('mouseup', () => {
+  closeMenu();
+});

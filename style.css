@@ -420,12 +420,13 @@ svg path {
     right: 2rem;
   }
 
-  .menu ul {
+  .menu ul li a {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
+    text-decoration: none;
 
     /* or 138% */
 
@@ -436,10 +437,10 @@ svg path {
   }
 
   .menu ul li {
+    transition: 3s ease-in-out;
     margin: 0 1.3rem;
     padding: 0.5rem 1rem 1rem 1rem;
     border-bottom: 1px solid #6f6c6b;
-    transition: 1s;
   }
 }
 
@@ -493,6 +494,7 @@ svg path {
   }
 
   .nav ul li {
+    z-index: 3;
     margin-right: 5px;
   }
 
