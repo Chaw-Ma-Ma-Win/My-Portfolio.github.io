@@ -359,13 +359,22 @@ footer {
   border-top: 1px solid #dbd8d7;
 }
 
-svg path {
+svg {
+  cursor: pointer;
+}
+
+footer svg path {
   fill: #505f79;
 }
 
 /* Mobile version finish */
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
+  html,
+  body {
+    height: 100%;
+  }
+
   .display-none {
     display: none;
   }
@@ -442,6 +451,89 @@ svg path {
     padding: 0.5rem 1rem 1rem 1rem;
     border-bottom: 1px solid #6f6c6b;
   }
+
+  .mobile-popup {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    padding: 1rem;
+    top: 0.8rem;
+    left: 0.8rem;
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    color: #1c1a19;
+    width: 93%;
+    height: 120%;
+    z-index: 3;
+  }
+
+  .popup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .popup h1 {
+    color: #172b4d;
+  }
+
+  .mobile-popup div ul {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+  }
+
+  .mobile-popup div ul li {
+    margin-right: 3px;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid #979493;
+  }
+
+  .pop-blur {
+    position: absolute;
+    width: 100%;
+    height: 1270%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    z-index: 2;
+  }
+
+  .pop-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    color: #344563;
+  }
+
+  .live,
+  .source {
+    border: none;
+    margin-top: 0.8rem;
+    letter-spacing: 0.8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    background-color: #ff6b00;
+    color: #fff;
+    padding: 0.7rem;
+    text-decoration: none;
+  }
+
+  .live {
+    width: 35vw;
+    margin-right: 1.3rem;
+  }
+
+  .source {
+    width: 40vw;
+  }
+
+  .live-a,
+  .source-a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -462,7 +554,6 @@ svg path {
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 1;
   }
 
   footer ul {
@@ -494,7 +585,6 @@ svg path {
   }
 
   .nav ul li {
-    z-index: 3;
     margin-right: 5px;
   }
 
@@ -547,12 +637,6 @@ svg path {
   .intro ul {
     width: 6rem;
     margin: 0;
-  }
-
-  .desktop-illu {
-    position: relative;
-    width: 50vw;
-    height: 109vh;
   }
 
   .multi-post h3 {
@@ -806,6 +890,16 @@ svg path {
 }
 
 @media only screen and (min-width: 1024px) {
+  body {
+    position: relative;
+    z-index: -1;
+  }
+
+  .desktop-illu {
+    width: 50vw;
+    height: 100vh;
+  }
+
   .intro-text div h1 {
     font-size: 5rem;
   }
@@ -889,5 +983,99 @@ svg path {
     padding: 0.7rem 0.6rem;
     text-decoration: none;
     margin: 1rem 0;
+  }
+
+  .mobile-popup {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    padding: 1.5rem;
+    top: 4rem;
+    left: 7rem;
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    color: #1c1a19;
+    width: 80%;
+    z-index: 4;
+  }
+
+  .popup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .popup h2 {
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    color: #172b4d;
+  }
+
+  .mobile-popup div ul {
+    margin-top: 1rem;
+    display: flex;
+  }
+
+  .mobile-popup div ul li {
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    margin-right: 3px;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid #979493;
+  }
+
+  .pop-blur {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+  }
+
+  .pop-description {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pop-description img {
+    width: 40vw;
+    height: 60vh;
+  }
+
+  .pop-text {
+    font-family: 'Poppins', sans-serif;
+    color: #344563;
+  }
+
+  .pop-description .pop-text {
+    width: 33vw;
+  }
+
+  .p-one {
+    margin-bottom: 2rem;
+  }
+
+  .live,
+  .source {
+    border: none;
+    margin-top: 4.6rem;
+    margin-right: 1rem;
+    letter-spacing: 0.8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    background-color: #ff6b00;
+    color: #fff;
+    padding: 0.7rem;
+    text-decoration: none;
+  }
+
+  .live-a,
+  .source-a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
