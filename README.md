@@ -20,7 +20,8 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Portfolio] <a name="Portfolio"></a>
+# 📖 Portfolio <a name="Portfolio"></a>
+**[portofolio]** is my personal portofolio.
 
 ## 🛠 Built With
 
@@ -108,12 +109,17 @@
 # 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/Chaw-Ma-Ma-Win/My-Portfolio.github.io/issues)
 
 # ⭐️ Show your support
+
+If you like this project support it by giving one star⭐️
 
 # 🙏 Acknowledgments
 
 - I would like to thank Microverse and my code reviewer for making me a better programmer
 
-📝 License
+## 📝 License <a name="license"></a>
+
 This project is [MIT](./LICENSE) licensed.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
