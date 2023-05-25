@@ -510,30 +510,61 @@
         chat please get in touch.
       </h3>
 
-      <!-- form -->
+      <!-- Desktop form -->
       <form
         action="https://formspree.io/f/mknaylej"
         method="POST"
-        class="contact-form"
+        class="contact-form display-none"
       >
-        <input
-          type="text"
-          name="Full Name"
-          placeholder="Full name"
-          class="none"
-        />
-        <div class="name display-none">
-          <input type="text" name="First Name" placeholder="First Name" />
-          <input type="text" name="Last Name" placeholder="Last Name" />
+        <div class="name">
+          <input type="text" placeholder="First Name" id="first-name" />
+          <input type="text" placeholder="Last Name" id="last-name" />
         </div>
-        <input type="email" name="email" placeholder="Email address" />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email address"
+          id="email"
+          required
+        />
         <textarea
           name=""
           cols="30"
           rows="5"
           placeholder="Write me something..."
         ></textarea>
-        <button type="submit" id="btn">Get in touch</button>
+        <button type="submit" id="btn" class="submit">Get in touch</button>
+        <small class="error"></small>
+      </form>
+      <!-- mobile form -->
+      <form
+        action="https://formspree.io/f/mknaylej"
+        method="POST"
+        class="contact-form none"
+      >
+        <input
+          type="text"
+          placeholder="Full name"
+          id="full-name"
+          class="none"
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email address"
+          id="email"
+          required
+        />
+        <textarea
+          name=""
+          cols="30"
+          rows="5"
+          placeholder="Write me something..."
+        ></textarea>
+        <button type="submit" id="btn" class="submit-one">Get in touch</button>
+        <small class="error"></small>
       </form>
     </section>
     <!-- part 5 end -->

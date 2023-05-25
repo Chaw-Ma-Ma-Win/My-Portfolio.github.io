@@ -12,6 +12,13 @@ const source = document.querySelector('.source');
 const liveATag = document.querySelector('.live-a');
 const sourceATag = document.querySelector('.source-a');
 const btn = document.querySelectorAll('.mobile-btn');
+const firstName = document.querySelector('#first-name');
+const lastName = document.querySelector('#last-name');
+const fullName = document.querySelector('#full-name');
+const email = document.querySelector('#email');
+const error = document.querySelector('.error');
+const submitOne = document.querySelector('.submit');
+const submitTwo = document.querySelector('.submit-one');
 
 function showMenu() {
   menu.style.display = 'inline';
@@ -199,4 +206,36 @@ projects[6].btn.addEventListener('click', () => {
 
 projects[6].sourceBtn.addEventListener('click', () => {
   sourceATag.setAttribute('href', projects[6].source);
+});
+
+submitOne.addEventListener('click', (e) => {
+  const message = [];
+
+  if (firstName.value === '' || lastName.value === '') {
+    message.push('Please enter your name');
+  }
+  if (email.value !== email.value.toLowerCase()) {
+    message.push('Please enter a valid email address');
+  }
+
+  if (message.length > 0) {
+    e.preventDefault();
+    error.innerText = message.join(',');
+  }
+});
+
+submitTwo.addEventListener('click', (e) => {
+  const message = [];
+
+  if (fullName.value === '') {
+    message.push('Please enter your name');
+  }
+  if (email.value !== email.value.toLowerCase()) {
+    message.push('Please enter a valid email address');
+  }
+
+  if (message.length > 0) {
+    e.preventDefault();
+    error.innerText = message.join(',');
+  }
 });
