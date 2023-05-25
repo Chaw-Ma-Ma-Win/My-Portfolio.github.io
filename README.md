@@ -21,7 +21,7 @@
 - [📝 License](#license)
 
 # 📖 Portfolio <a name="Portfolio"></a>
-**[portofolio]** is my personal portofolio.
+This is the website to show my skills and projects.
 
 ## 🛠 Built With
 
