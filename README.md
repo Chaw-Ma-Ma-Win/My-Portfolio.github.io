@@ -20,7 +20,8 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Portfolio] <a name="Portfolio"></a>
+# 📖 Portfolio <a name="Portfolio"></a>
+This is the website to show my skills and projects.
 
 ## 🛠 Built With
 
@@ -43,6 +44,16 @@
 - [Development] : Mobile first development
 - [Responsiveness] : Responsiveness and flexibility for any screen size
 - [Linters] : This is a tool used in the project to avoide coding error and professionality
+
+## 🚀 Live Demo <a name="live-demo"></a>
+- [Live Demo Link](https://chaw-ma-ma-win.github.io/My-Portfolio.github.io/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Presentation My Portfolio <a name="Loom-video"></a>
+- [Live Demo Link](https://www.loom.com/share/651810b058b84c128df62efa3a168896)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started
 
@@ -107,12 +118,17 @@
 # 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/Chaw-Ma-Ma-Win/My-Portfolio.github.io/issues)
 
 # ⭐️ Show your support
+
+If you like this project support it by giving one star⭐️
 
 # 🙏 Acknowledgments
 
 - I would like to thank Microverse and my code reviewer for making me a better programmer
 
-📝 License
+## 📝 License <a name="license"></a>
+
 This project is [MIT](./LICENSE) licensed.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
