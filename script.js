@@ -238,4 +238,13 @@ submitTwo.addEventListener('click', (e) => {
     e.preventDefault();
     error.innerText = message.join(',');
   }
+
+  const obj = {
+    email: email.value,
+    name: fullName.value,
+  };
+
+  const convertObj = JSON.stringify(obj);
+
+  localStorage.setItem('fact', convertObj);
 });
