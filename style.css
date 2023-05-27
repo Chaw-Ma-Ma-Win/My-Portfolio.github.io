@@ -367,6 +367,42 @@ footer svg path {
   fill: #505f79;
 }
 
+.btn:hover,
+#btn:hover,
+#full-btn:hover,
+.mobile-btn:hover,
+.live:hover,
+.source:hover {
+  cursor: pointer;
+  background: #fff5e1;
+  color: #ff6b00;
+}
+
+.live-a:hover path,
+.source-a:hover path {
+  fill: #ff6b00;
+}
+
+.btn:active,
+#btn:active,
+#full-btn:active,
+.mobile-btn:active,
+.live:active,
+.source:active {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
+.btn:disabled,
+#btn:disabled,
+#full-btn:disabled,
+.mobile-btn:disabled,
+.live:disabled,
+.source:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
 /* Mobile version finish */
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
@@ -460,7 +496,7 @@ footer svg path {
     border: 1px solid #dfe1e6;
     color: #1c1a19;
     width: 93%;
-    height: 120%;
+    height: 100%;
     z-index: 3;
   }
 
@@ -475,8 +511,8 @@ footer svg path {
   }
 
   .mobile-popup div ul {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     display: flex;
   }
 
@@ -499,6 +535,7 @@ footer svg path {
   }
 
   .pop-text p {
+    margin-top: 1.5rem;
     font-family: 'Poppins', sans-serif;
     font-size: small;
     color: #344563;
@@ -997,12 +1034,13 @@ footer svg path {
     font-family: 'Roboto', sans-serif;
     position: absolute;
     padding: 1.5rem;
-    top: 8rem;
-    left: 7rem;
+    margin-bottom: 5rem;
+    top: 6rem;
+    left: 8rem;
     background-color: #fff;
     border: 1px solid #dfe1e6;
     color: #1c1a19;
-    width: 80%;
+    width: 77%;
     z-index: 4;
   }
 
@@ -1033,7 +1071,7 @@ footer svg path {
   }
 
   .pop-blur {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -1050,16 +1088,17 @@ footer svg path {
 
   .pop-description img {
     width: 40vw;
-    height: 60vh;
+    height: 50vh;
   }
 
   .pop-text {
     font-family: 'Poppins', sans-serif;
+    font-size: small;
     color: #344563;
   }
 
   .pop-description .pop-text {
-    width: 33vw;
+    width: 31vw;
   }
 
   .p-one {
