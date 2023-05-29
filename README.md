@@ -27,6 +27,15 @@ This is the website to show my skills and projects.
 
 - HTML
 - CSS
+## 🚀 Live Demo <a name="live-demo"></a>
+- [Live Demo Link](https://chaw-ma-ma-win.github.io/My-Portfolio.github.io/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Presentation My Portfolio <a name="Loom-video"></a>
+- [Live Demo Link](https://www.loom.com/share/651810b058b84c128df62efa3a168896)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Key Features
 
